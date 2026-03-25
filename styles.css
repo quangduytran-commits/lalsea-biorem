@@ -1040,6 +1040,122 @@ p {
   color: var(--ink);
 }
 
+/* ─── Strain highlight ────────────────────────────────────────────── */
+
+.strain-highlight {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 24px;
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(39, 59, 142, 0.06), rgba(71, 187, 195, 0.08));
+  border: 1px solid var(--accent-border);
+}
+
+.strain-highlight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--blue), var(--accent), var(--blue));
+}
+
+.strain-highlight__badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 12px;
+  border-radius: var(--radius-pill);
+  background: var(--blue);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.strain-highlight h3 {
+  font-size: 26px;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+
+.strain-highlight h3 em {
+  font-style: italic;
+}
+
+.strain-highlight__aka {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.strain-highlight__aka em {
+  font-style: italic;
+}
+
+.strain-highlight__features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.strain-feature {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  border-radius: var(--radius-md);
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+}
+
+.strain-feature__icon {
+  font-size: 24px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.strain-feature strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.strain-feature p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.strain-highlight__note {
+  margin: 0;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.strain-highlight__note em {
+  font-style: italic;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .strain-highlight__features {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ─── Media module cards (in dark section) ────────────────────────── */
 
 .media-module-card {
