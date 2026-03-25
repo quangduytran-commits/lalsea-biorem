@@ -142,7 +142,8 @@ html {
 body {
   margin: 0;
   font-family: var(--font-body);
-  line-height: 1.58;
+  font-size: 17px;
+  line-height: 1.65;
   letter-spacing: 0.002em;
   color: var(--ink);
   background-color: var(--bg);
@@ -237,11 +238,19 @@ code {
   min-height: 36px;
   padding: 0 14px;
   border-radius: var(--radius-pill);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--muted);
   white-space: nowrap;
   transition: background 180ms ease, color 180ms ease;
+}
+
+.site-nav__link--wrap {
+  white-space: normal;
+  text-align: center;
+  line-height: 1.25;
+  padding: 6px 14px;
+  border-radius: var(--radius-md);
 }
 
 .site-nav__link:hover {
@@ -315,9 +324,9 @@ code {
   }
 
   .site-nav__link {
-    font-size: 12px;
-    padding: 0 10px;
-    min-height: 32px;
+    font-size: 13px;
+    padding: 4px 12px;
+    min-height: 36px;
   }
 }
 
@@ -1374,20 +1383,105 @@ p {
 }
 
 @media (max-width: 767px) {
+  body {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
   .section {
-    padding: 68px 0;
+    padding: 52px 0;
   }
 
   .section--compact {
-    padding: 44px 0;
+    padding: 36px 0;
   }
 
   .hero {
-    padding: 28px 0 64px;
+    padding: 28px 0 48px;
   }
 
   .hero h1 span {
     max-width: 100%;
+  }
+
+  .hero__lead,
+  .section-head > p,
+  .summary-card p,
+  .mechanism-step p,
+  .quick-panel > p,
+  .contrast-card > p,
+  .hero-board__card p,
+  .tech-tile p,
+  .media-module__body p,
+  .signal-card p,
+  .benefit-card p,
+  .quick-item {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .hero-board__card strong,
+  .tech-tile strong,
+  .signal-card h3,
+  .media-module__body h3 {
+    font-size: 19px;
+  }
+
+  .mechanism-step h3 {
+    font-size: 18px;
+  }
+
+  .check-list li {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .alert-pill {
+    font-size: 14px;
+  }
+
+  .pill,
+  .tag {
+    font-size: 14px;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+  }
+
+  .field span {
+    font-size: 15px;
+  }
+
+  .field input,
+  .field textarea {
+    font-size: 16px;
+    min-height: 48px;
+  }
+
+  .form-phone {
+    font-size: 15px;
+  }
+
+  .form-status {
+    font-size: 14px;
+  }
+
+  .strain-feature strong {
+    font-size: 15px;
+  }
+
+  .strain-feature p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .strain-highlight__note {
+    font-size: 14px;
+  }
+
+  .strain-highlight__aka {
+    font-size: 14px;
   }
 
   .hero-board,
@@ -1406,6 +1500,7 @@ p {
 
   .action-row .button {
     width: 100%;
+    font-size: 16px;
   }
 
   .hero-card__head {
@@ -1969,9 +2064,61 @@ p {
 }
 
 @media (max-width: 767px) {
+  .section-lead--ehp {
+    font-size: 15px;
+  }
+
   .ehp-cycle,
   .farming-practice {
-    padding: 22px;
+    padding: 20px;
+  }
+
+  .ehp-cycle__intro h3 {
+    font-size: 19px;
+  }
+
+  .ehp-step strong {
+    font-size: 15px;
+  }
+
+  .ehp-step p {
+    font-size: 14px;
+  }
+
+  .ehp-cycle__loop span {
+    font-size: 14px;
+  }
+
+  .trio-solution__head h3 {
+    font-size: 21px;
+  }
+
+  .trio-solution__head p {
+    font-size: 15px;
+  }
+
+  .trio-card ul li {
+    font-size: 14px;
+  }
+
+  .trio-card__tag {
+    font-size: 14px;
+  }
+
+  .practice-item strong {
+    font-size: 15px;
+  }
+
+  .practice-item p {
+    font-size: 14px;
+  }
+
+  .farming-practice__head h3 {
+    font-size: 19px;
+  }
+
+  .farming-practice__head p {
+    font-size: 15px;
   }
 
   .practice-grid {
@@ -1991,6 +2138,7 @@ p {
   .formula-item,
   .formula-result {
     width: 100%;
+    font-size: 14px;
   }
 }
 
