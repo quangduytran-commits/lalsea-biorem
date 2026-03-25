@@ -4,10 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>LALSEA BIOREM — Giải pháp vi sinh cho ao tôm</title>
-    <meta name="description" content="Bộ 3 Lallemand: LALSEA BIOREM, LALPACK PROBIO, LALPACK IMMUNE — quản lý nước, đường ruột và miễn dịch cho ao tôm." />
+    <meta
+      name="description"
+      content="Trang sản phẩm LALSEA BIOREM — tập trung vào xử lý bùn đáy, giảm hữu cơ và giữ nước ổn định hơn cho ao nuôi."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css" />
     <script src="./pricing-config.js"></script>
     <script src="./pricing-render.js" defer></script>
@@ -15,489 +18,738 @@
     <script src="./lead-submit.js" defer></script>
   </head>
   <body>
-
-    <!-- ═══ NAV ═══ -->
-    <nav class="nav">
-      <div class="shell--wide nav__inner">
-        <span class="nav__brand">Lallemand Thủy sản</span>
-        <a class="nav__phone" href="tel:0867957568">&#x1F4DE; Zalo: 0867 957 568</a>
-        <div class="nav__links">
-          <a href="#" class="nav__link nav__link--active">BIOREM</a>
-          <a href="#ehp" class="nav__link nav__link--alert">EHP</a>
-          <a href="#lalpack" class="nav__link">LALPACK<br>PROBIO + IMMUNE</a>
-          <a href="#pricing" class="nav__link">Bảng giá</a>
-          <a href="#form" class="nav__link">Liên hệ</a>
+    <nav class="site-nav">
+      <div class="shell site-nav__inner">
+        <span class="site-nav__brand">Lallemand Thủy sản</span>
+        <a class="site-nav__phone" href="tel:0867957568">&#x1F4DE; Liên hệ / Zalo: 0867 957 568</a>
+        <div class="site-nav__links">
+          <a href="#" class="site-nav__link is-active" data-tab="biorem">LALSEA BIOREM</a>
+          <a href="#lalpack" class="site-nav__link site-nav__link--wrap" data-tab="lalpack">LALPACK<br>PROBIO + IMMUNE</a>
+          <a href="#ehp-module" class="site-nav__link site-nav__link--alert" data-tab="ehp">EHP</a>
+          <a href="#pricing" class="site-nav__link">Bảng giá</a>
+          <a href="#form" class="site-nav__link">Liên hệ</a>
         </div>
       </div>
     </nav>
+    <main class="lalsea-page">
+      <section class="hero">
+        <div class="shell hero__grid">
+          <div class="hero__content">
+            <div class="alert-pill">Nước xấu – đáy bẩn – khí độc tăng?</div>
+            <p class="eyebrow">Giải pháp vi sinh quản lý nước cho ao tôm</p>
+            <h1>
+              LALSEA BIOREM
+              <span>Dọn sạch đáy, giữ nước ổn và giảm áp lực khí độc nhanh hơn</span>
+            </h1>
+            <p class="hero__lead">
+              Nếu bạn đang đánh vi sinh liên tục mà nước vẫn xấu, bùn vẫn dày và tôm vẫn yếu,
+              vấn đề thường không nằm ở mặt nước mà nằm ở nền đáy và tải hữu cơ chưa được xử lý đúng.
+            </p>
 
-    <main>
-
-      <!-- ═══ HERO ═══ -->
-      <section class="hero sec--dark">
-        <p class="hero__eyebrow fade-in">Giải pháp vi sinh quản lý nước cho ao tôm</p>
-        <h1 class="hero__title fade-in fade-in-delay-1">LALSEA<br>BIOREM</h1>
-        <p class="hero__sub fade-in fade-in-delay-2">Dọn sạch đáy. Giữ nước ổn.<br>Giảm khí độc nhanh hơn.</p>
-        <p class="hero__body fade-in fade-in-delay-3">
-          Nếu bạn đánh vi sinh liên tục mà nước vẫn xấu, bùn vẫn dày và tôm vẫn yếu —
-          vấn đề nằm ở nền đáy và tải hữu cơ chưa được xử lý đúng.
-        </p>
-        <div class="hero__cta fade-in fade-in-delay-3">
-          <a class="btn btn--primary" href="#form">Nhận phác đồ xử lý ao</a>
-          <a class="btn btn--outline" href="#mechanism">Xem cơ chế hoạt động</a>
-        </div>
-        <img class="hero__packshot fade-in fade-in-delay-4" src="./assets/lalsea-biorem-packshot.svg" alt="LALSEA BIOREM" />
-      </section>
-
-      <!-- ═══ STATS ═══ -->
-      <section class="sec sec--dark">
-        <div class="shell">
-          <div class="stats-row">
-            <div class="fade-in">
-              <div class="stat">6+2</div>
-              <span class="stat-label">Chủng vi sinh chức năng cao<br>(6 Bacillus + BACTOCELL)</span>
+            <div class="pill-row">
+              <span class="pill">Ao hữu cơ cao</span>
+              <span class="pill">Bùn đáy dày</span>
+              <span class="pill">NH3 / NO2 tăng</span>
             </div>
-            <div class="fade-in fade-in-delay-1">
-              <div class="stat">5</div>
-              <span class="stat-label">Loại enzyme phân hủy<br>hữu cơ phức tạp</span>
+
+            <div class="hero-board">
+              <article class="hero-board__card">
+                <span>Định vị</span>
+                <strong>Quản lý nước &amp; nền đáy</strong>
+                <p>Tập trung vào nền đáy, tải hữu cơ và hành vi nước của ao nuôi.</p>
+              </article>
+              <article class="hero-board__card">
+                <span>Mục tiêu vận hành</span>
+                <strong>Ổn định môi trường</strong>
+                <p>Dễ quản lý hơn trong giai đoạn cho ăn mạnh, mật độ cao và biến động thời tiết.</p>
+              </article>
+              <article class="hero-board__card">
+                <span>Giai đoạn sử dụng</span>
+                <strong>Áp lực nuôi thương phẩm</strong>
+                <p>Phù hợp khi ao bắt đầu nặng đáy, nước thất thường và cần một lớp quản lý sinh học bền hơn.</p>
+              </article>
             </div>
-            <div class="fade-in fade-in-delay-2">
-              <div class="stat">4in1</div>
-              <span class="stat-label">Cơ chế: đáy, NH3,<br>mầm bệnh, cân bằng</span>
+
+            <div class="action-row">
+              <a class="button button--primary" href="#form">Nhận phác đồ xử lý ao ngay</a>
+              <a class="button button--secondary" href="#image-modules">Xem hình ảnh kỹ thuật</a>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="hero-card__head">
+              <span class="tag">LALSEA BIOREM</span>
+              <span class="microcopy">Ao tôm / Vi sinh</span>
+            </div>
+
+            <div class="hero-card__signalbar">
+              <span>Tải hữu cơ</span>
+              <span>Áp lực nền đáy</span>
+              <span>Ổn định nước</span>
+            </div>
+
+            <div class="hero-card__body">
+              <figure class="media-module media-module--hero">
+                <div class="media-module__frame media-module__frame--packshot">
+                  <img
+                    src="./assets/lalsea-biorem-packshot.svg"
+                    alt="Bao bì sản phẩm LALSEA BIOREM"
+                  />
+                </div>
+              </figure>
+
+              <div class="summary-card">
+                <h2>Xử lý đúng gốc, không chỉ đánh nước</h2>
+                <p>
+                  LALSEA BIOREM phù hợp khi mục tiêu là làm sạch đáy, giảm tải hữu cơ và kéo ao
+                  về trạng thái ổn định sinh học hơn thay vì chỉ xử lý triệu chứng nổi.
+                </p>
+                <ul class="check-list">
+                  <li>Chủng <em>Bacillus velezensis</em> — sinh enzyme mạnh, kháng khuẩn tự nhiên.</li>
+                  <li>Phân hủy nhanh hữu cơ, giảm bùn đáy rõ rệt.</li>
+                  <li>Hỗ trợ kiểm soát NH3 / NO2 để nước nhẹ hơn.</li>
+                  <li>Ổn định hệ vi sinh, giảm áp lực vi khuẩn bất lợi.</li>
+                </ul>
+
+                <div class="protocol-list">
+                  <div class="protocol-item">
+                    <strong>01</strong>
+                    <span>Cắt tải hữu cơ tích tụ</span>
+                  </div>
+                  <div class="protocol-item">
+                    <strong>02</strong>
+                    <span>Làm nhẹ áp lực khí độc</span>
+                  </div>
+                  <div class="protocol-item">
+                    <strong>03</strong>
+                    <span>Giữ ao dễ quản lý hơn</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ═══ PAIN STORY ═══ -->
-      <section class="story sec--dark">
-        <p class="eyebrow eyebrow--accent fade-in">Dấu hiệu nhận biết</p>
-        <h2 class="headline-lg story__headline fade-in fade-in-delay-1">
-          Ao của bạn đang<br>báo động?
-        </h2>
-        <p class="body-lg story__body fade-in fade-in-delay-2">
-          Nước nhanh dơ. Bùn đáy dày. NH3 / NO2 tăng lặp lại.
-          Tảo bùng rồi sụp. Đánh vi sinh hoài mà không bền.
-        </p>
-        <div class="pills fade-in fade-in-delay-3">
-          <span class="pill">Ao hữu cơ cao</span>
-          <span class="pill">Bùn đáy dày</span>
-          <span class="pill">NH3 / NO2 tăng</span>
-          <span class="pill">Tảo biến động</span>
+      <section class="section section--compact">
+        <div class="shell tech-strip">
+          <article class="tech-tile">
+            <span>Hồ sơ áp lực</span>
+            <strong>Ao hữu cơ cao</strong>
+            <p>Nước mau xuống màu, lớp bùn dày và đáy nuôi giữ nhiều chất thải tích tụ.</p>
+          </article>
+          <article class="tech-tile">
+            <span>Nguyên nhân chính</span>
+            <strong>NH3 / NO2 tăng lặp</strong>
+            <p>Biến động sau mưa, sau đợt cho ăn mạnh hoặc khi tảo bùng rồi sụp.</p>
+          </article>
+          <article class="tech-tile">
+            <span>Trọng tâm vận hành</span>
+            <strong>Ổn định môi trường ao</strong>
+            <p>Ưu tiên nền vi sinh bền hơn để giảm số lần phải xử lý phản ứng.</p>
+          </article>
+          <article class="tech-tile">
+            <span>Hình ảnh minh họa</span>
+            <strong>Kỹ thuật, hiện đại</strong>
+            <p>Dễ thay ảnh hiện trường, bảng theo dõi và sơ đồ kỹ thuật mà không phá bố cục.</p>
+          </article>
         </div>
       </section>
 
-      <!-- ═══ GIẢI PHÁP ═══ -->
-      <section class="story sec--surface">
-        <p class="eyebrow eyebrow--accent fade-in">Giải pháp</p>
-        <h2 class="headline-lg story__headline fade-in fade-in-delay-1">
-          Xử lý đúng gốc.<br>Không chỉ cứu mặt nước.
-        </h2>
-        <p class="body-lg story__body fade-in fade-in-delay-2">
-          LALSEA BIOREM chỉnh lại nền sinh học ao — đáy sạch hơn, nước nhẹ hơn,
-          hệ vi sinh bền hơn — để ao tự ổn thay vì cứ chờ sự cố rồi xử lý.
-        </p>
-      </section>
-
-      <!-- ═══ BACILLUS VELEZENSIS ═══ -->
-      <section class="sec sec--dark" id="mechanism">
+      <section class="section">
         <div class="shell">
-          <div class="center fade-in" style="margin-bottom: 48px;">
-            <p class="eyebrow eyebrow--accent">Chủng vi sinh nòng cốt</p>
-            <h2 class="headline-md">Sức mạnh từ<br><em>Bacillus velezensis</em></h2>
-          </div>
-
-          <div class="strain fade-in fade-in-delay-1">
-            <span class="strain__badge">Chủng nòng cốt</span>
-            <h3 class="strain__name">Bacillus velezensis</h3>
-            <p class="strain__aka">Trước đây: <em>Bacillus amyloliquefaciens</em> — cập nhật theo phân loại gen hiện đại</p>
-
-            <div class="strain__features">
-              <div class="strain__feat">
-                <span class="strain__feat-icon">&#x1F9EA;</span>
-                <div>
-                  <strong>Sinh enzyme cực mạnh</strong>
-                  <p>Tiết amylase, protease, lipase, cellulase, xylanase — phân hủy đa dạng chất hữu cơ phức tạp ở đáy ao.</p>
-                </div>
-              </div>
-              <div class="strain__feat">
-                <span class="strain__feat-icon">&#x1F6E1;</span>
-                <div>
-                  <strong>Kháng khuẩn tự nhiên</strong>
-                  <p>Sản sinh hoạt chất ức chế Vibrio và vi khuẩn gây hại — không cần kháng sinh.</p>
-                </div>
-              </div>
-              <div class="strain__feat">
-                <span class="strain__feat-icon">&#x2696;</span>
-                <div>
-                  <strong>Kiểm soát hệ vi sinh</strong>
-                  <p>Cạnh tranh và loại trừ mầm bệnh, giữ cân bằng vi sinh ao ổn định suốt vụ nuôi.</p>
-                </div>
-              </div>
-            </div>
-
-            <p class="strain__note">
-              Kết hợp cùng <em>Pediococcus acidilactici</em> (BACTOCELL) và 5 chủng Bacillus khác
-              — tạo nên công thức synbiotic mạnh mẽ của LALSEA BIOREM.
+          <div class="section-head">
+            <p class="eyebrow">Dấu hiệu nhận biết</p>
+            <h2>Bạn có đang gặp đúng các biểu hiện này không?</h2>
+            <p>
+              Đây là nhóm tín hiệu rất thường gặp khi nền đáy và tải hữu cơ đang kéo chất lượng nước đi xuống,
+              làm đội kỹ thuật phải xử lý liên tục nhưng ao vẫn không bền.
             </p>
           </div>
+
+          <div class="signal-grid">
+            <article class="signal-card">
+              <span class="card-index">01</span>
+              <h3>Nước nhanh dơ</h3>
+              <p>Bùn đáy dày lên mỗi ngày, màu nước xuống nhanh và ao thiếu độ “nhẹ”.</p>
+            </article>
+            <article class="signal-card">
+              <span class="card-index">02</span>
+              <h3>Khí độc tăng</h3>
+              <p>NH3 / NO2 tăng kéo stress, ăn yếu và khó giữ nhịp tăng trưởng ổn định.</p>
+            </article>
+            <article class="signal-card">
+              <span class="card-index">03</span>
+              <h3>Tảo biến động</h3>
+              <p>Tảo bùng rồi sụp khiến màu nước thay đổi nhanh và khó giữ kiểm soát vận hành.</p>
+            </article>
+            <article class="signal-card">
+              <span class="card-index">04</span>
+              <h3>Xử lý rời rạc</h3>
+              <p>Đánh vi sinh hoài nhưng nước vẫn không ổn vì phần gốc của nền đáy chưa được xử lý.</p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <!-- ═══ 4 CƠ CHẾ ═══ -->
-      <section class="sec sec--dark">
+      <section class="section section--tint">
+        <div class="shell two-up">
+          <div>
+            <div class="section-head">
+              <p class="eyebrow">Giải pháp</p>
+              <h2>Xử lý đúng gốc, không phải chỉ cứu tạm mặt nước</h2>
+              <p>
+                Hướng tiếp cận của LALSEA BIOREM là chỉnh lại nền sinh học ao để hệ thống tự ổn hơn,
+                thay vì cứ chờ nước xấu rồi xử lý từng đợt.
+              </p>
+            </div>
+
+            <div class="benefit-grid">
+              <article class="benefit-card">
+                <span class="benefit-card__label">Kết quả 01</span>
+                <p>Phân hủy nhanh hữu cơ, giúp đáy ao sạch hơn và giảm áp lực bùn tích tụ.</p>
+              </article>
+              <article class="benefit-card">
+                <span class="benefit-card__label">Kết quả 02</span>
+                <p>Hỗ trợ kiểm soát NH3 / NO2 để nước nhẹ hơn và giảm áp lực khí độc.</p>
+              </article>
+              <article class="benefit-card">
+                <span class="benefit-card__label">Kết quả 03</span>
+                <p>Giữ hệ vi sinh ao ổn định hơn, từ đó giảm áp lực từ vi khuẩn bất lợi.</p>
+              </article>
+              <article class="benefit-card">
+                <span class="benefit-card__label">Kết quả 04</span>
+                <p>Làm nền nước bền hơn để kỹ thuật dễ quản lý suốt vụ nuôi.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="mechanism-panel" id="mechanism">
+            <p class="eyebrow">Cơ chế</p>
+            <h2>Cách LALSEA BIOREM xử lý ao của bạn</h2>
+
+            <div class="strain-highlight">
+              <div class="strain-highlight__badge">Chủng vi sinh nòng cốt</div>
+              <h3><em>Bacillus velezensis</em></h3>
+              <p class="strain-highlight__aka">
+                (trước đây: <em>Bacillus amyloliquefaciens</em> — cập nhật theo phân loại gen hiện đại)
+              </p>
+              <div class="strain-highlight__features">
+                <div class="strain-feature">
+                  <span class="strain-feature__icon">&#x1F9EA;</span>
+                  <div>
+                    <strong>Sinh enzyme cực mạnh</strong>
+                    <p>Tiết amylase, protease, lipase, cellulase, xylanase — phân hủy đa dạng chất hữu cơ phức tạp ở đáy ao.</p>
+                  </div>
+                </div>
+                <div class="strain-feature">
+                  <span class="strain-feature__icon">&#x1F6E1;</span>
+                  <div>
+                    <strong>Kháng khuẩn tự nhiên</strong>
+                    <p>Sản sinh hoạt chất kháng khuẩn ức chế Vibrio và vi khuẩn gây hại — không cần kháng sinh.</p>
+                  </div>
+                </div>
+                <div class="strain-feature">
+                  <span class="strain-feature__icon">&#x2696;</span>
+                  <div>
+                    <strong>Kiểm soát hệ vi sinh</strong>
+                    <p>Cạnh tranh và loại trừ mầm bệnh, giữ cân bằng vi sinh ao ổn định suốt vụ nuôi.</p>
+                  </div>
+                </div>
+              </div>
+              <p class="strain-highlight__note">
+                Kết hợp cùng <em>Pediococcus acidilactici</em> (BACTOCELL) và 5 chủng Bacillus khác
+                — tạo nên công thức synbiotic mạnh mẽ của LALSEA BIOREM.
+              </p>
+            </div>
+
+            <div class="mechanism-list">
+              <article class="mechanism-step">
+                <span class="step-number">01</span>
+                <div>
+                  <h3>Cắt nhanh tải hữu cơ</h3>
+                  <p>Hỗ trợ bẻ nhỏ chất thải tích tụ ở đáy, giúp ao bớt nặng và giảm lớp bùn.</p>
+                </div>
+              </article>
+              <article class="mechanism-step">
+                <span class="step-number">02</span>
+                <div>
+                  <h3>Kéo nhẹ áp lực NH3 / NO2</h3>
+                  <p>Khi hữu cơ và nền đáy được xử lý đúng, nước bớt bị đẩy vào trạng thái độc.</p>
+                </div>
+              </article>
+              <article class="mechanism-step">
+                <span class="step-number">03</span>
+                <div>
+                  <h3>Ổn định hệ vi sinh có lợi</h3>
+                  <p>Nền vi sinh bền hơn giúp ao đỡ thất thường trong giai đoạn nuôi mật độ cao.</p>
+                </div>
+              </article>
+              <article class="mechanism-step">
+                <span class="step-number">04</span>
+                <div>
+                  <h3>Giữ ao dễ quản lý hơn</h3>
+                  <p>Đáy sạch hơn và nước ổn định hơn giúp kỹ thuật chủ động thay vì chạy theo sự cố.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark" id="image-modules">
         <div class="shell">
-          <div class="center fade-in" style="margin-bottom: 48px;">
-            <p class="eyebrow eyebrow--accent">Cơ chế</p>
-            <h2 class="headline-md">Cách BIOREM xử lý ao của bạn</h2>
+          <div class="section-head section-head--split section-head--dark">
+            <div>
+              <p class="eyebrow eyebrow--light">Hình ảnh kỹ thuật</p>
+              <h2>Minh họa cơ chế hoạt động của LALSEA BIOREM</h2>
+            </div>
+            <p class="section-note section-note--light">
+              Dữ liệu từ phòng thí nghiệm và thực nghiệm thực tế của Lallemand, giúp bạn hiểu rõ
+              cách sản phẩm hoạt động trong ao nuôi.
+            </p>
           </div>
 
-          <div class="cards-2">
-            <div class="card fade-in">
-              <div class="card__icon">01</div>
-              <h3 class="card__title">Cắt nhanh tải hữu cơ</h3>
-              <p class="card__body">Bẻ nhỏ chất thải tích tụ ở đáy, giúp ao bớt nặng và giảm lớp bùn hiệu quả.</p>
-            </div>
-            <div class="card fade-in fade-in-delay-1">
-              <div class="card__icon">02</div>
-              <h3 class="card__title">Kéo nhẹ NH3 / NO2</h3>
-              <p class="card__body">Hữu cơ được xử lý đúng → nước bớt bị đẩy vào trạng thái độc, tôm bớt stress.</p>
-            </div>
-            <div class="card fade-in fade-in-delay-2">
-              <div class="card__icon">03</div>
-              <h3 class="card__title">Ổn định hệ vi sinh</h3>
-              <p class="card__body">Nền vi sinh bền hơn giúp ao đỡ thất thường trong giai đoạn nuôi mật độ cao.</p>
-            </div>
-            <div class="card fade-in fade-in-delay-3">
-              <div class="card__icon">04</div>
-              <h3 class="card__title">Giữ ao dễ quản lý</h3>
-              <p class="card__body">Đáy sạch, nước ổn → kỹ thuật chủ động thay vì chạy theo sự cố mỗi ngày.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ═══ HÌNH ẢNH KỸ THUẬT ═══ -->
-      <section class="sec sec--surface" id="image-modules">
-        <div class="shell--wide">
-          <div class="center fade-in" style="margin-bottom: 48px;">
-            <p class="eyebrow eyebrow--accent">Hình ảnh kỹ thuật</p>
-            <h2 class="headline-md">Dữ liệu thực nghiệm<br>từ Lallemand</h2>
-          </div>
-
-          <div class="cards-3">
-            <div class="visual-card fade-in">
-              <div class="visual-card__frame">
-                <img src="./assets/module-water-dashboard.png" alt="Giảm NH3 trực tiếp" />
+          <div class="media-grid">
+            <article class="media-module-card">
+              <div class="media-module__frame">
+                <img
+                  src="./assets/module-water-dashboard.png"
+                  alt="Sơ đồ vi khuẩn hấp thu ammonia NH3 trực tiếp"
+                />
               </div>
-              <div class="visual-card__body">
+              <div class="media-module__body">
                 <h3>Giảm NH3 trực tiếp</h3>
-                <p>Vi khuẩn dị dưỡng hấp thu ammonia vào sinh khối — giảm khí độc mà không phụ thuộc vào tảo.</p>
+                <p>
+                  Vi khuẩn dị dưỡng trong BIOREM hấp thu trực tiếp ammonia (NH4⁺/NH3) vào sinh khối khi sinh trưởng — giảm nồng độ khí độc mà không phụ thuộc vào tảo hay quá trình nitrat hóa.
+                </p>
               </div>
-            </div>
-            <div class="visual-card fade-in fade-in-delay-1">
-              <div class="visual-card__frame">
-                <img src="./assets/module-bottom-pressure.png" alt="Phân hủy hữu cơ" />
+            </article>
+
+            <article class="media-module-card">
+              <div class="media-module__frame">
+                <img
+                  src="./assets/module-bottom-pressure.png"
+                  alt="Biểu đồ phân hủy vật chất hữu cơ với LALSEA BIOREM"
+                />
               </div>
-              <div class="visual-card__body">
-                <h3>Phân hủy hữu cơ vượt trội</h3>
-                <p>Giảm tải bùn đáy, cắt nguồn phát sinh khí độc từ gốc — hiệu quả cao hơn đối chứng.</p>
+              <div class="media-module__body">
+                <h3>Phân hủy hữu cơ hiệu quả cao</h3>
+                <p>
+                  Thử nghiệm cho thấy LALSEA BIOREM phân hủy vật chất hữu cơ vượt trội so với đối chứng — giảm tải bùn đáy, cắt nguồn phát sinh khí độc từ gốc.
+                </p>
               </div>
-            </div>
-            <div class="visual-card fade-in fade-in-delay-2">
-              <div class="visual-card__frame">
-                <img src="./assets/module-application-window.png" alt="Ức chế Vibrio" />
+            </article>
+
+            <article class="media-module-card">
+              <div class="media-module__frame">
+                <img
+                  src="./assets/module-application-window.png"
+                  alt="Biểu đồ ức chế mầm bệnh Vibrio với LALSEA BIOREM"
+                />
               </div>
-              <div class="visual-card__body">
-                <h3>Ức chế mạnh Vibrio</h3>
-                <p>Kiềm hãm đáng kể sự phát triển của Vibrio — giảm áp lực mầm bệnh trong ao mật độ cao.</p>
+              <div class="media-module__body">
+                <h3>Ức chế mạnh mầm bệnh Vibrio</h3>
+                <p>
+                  Dữ liệu thực nghiệm cho thấy LALSEA BIOREM kiềm hãm đáng kể sự phát triển của Vibrio — giảm áp lực mầm bệnh cơ hội trong ao nuôi mật độ cao.
+                </p>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <!-- ═══ HARVEST ═══ -->
-      <section class="sec sec--dark" style="padding: 40px 0;">
-        <div class="shell--wide">
-          <figure class="harvest fade-in">
-            <img src="./assets/lalsea-biorem-harvest.png" alt="Thu hoạch tôm thành công" />
+      <section class="section section--compact">
+        <div class="shell">
+          <figure class="harvest-figure">
+            <img
+              src="./assets/lalsea-biorem-harvest.png"
+              alt="Nông dân thu hoạch tôm thành công với LALSEA BIOREM"
+            />
             <figcaption>Vụ mùa thành công — ao tôm sử dụng LALSEA BIOREM</figcaption>
           </figure>
         </div>
       </section>
 
-      <!-- ═══════════════════════════════════════════════════════
-           EHP MODULE
-           ═══════════════════════════════════════════════════════ -->
-      <section class="sec sec--dark" id="ehp">
-        <div class="shell">
-          <div class="center fade-in" style="margin-bottom: 48px;">
-            <p class="eyebrow eyebrow--red">Hiểu đúng để phòng đúng</p>
-            <h2 class="headline-lg">Vòng lặp bế tắc:<br>Nước bẩn → Ruột yếu<br>→ EHP bùng phát</h2>
-            <p class="body-lg" style="max-width: 600px; margin: 24px auto 0;">
-              EHP tấn công gan tụy, khiến tôm chậm lớn và FCR tăng vọt.
-              Nhưng EHP không tự bùng — nó bùng khi ao mất cân bằng và tôm suy yếu từ bên trong.
+      <section class="section">
+        <div class="shell urgency-grid">
+          <div class="contrast-card">
+            <p class="eyebrow eyebrow--light">Nên dùng ngay khi</p>
+            <h2>Đừng chờ nước sập rồi mới xử lý</h2>
+            <p>
+              LALSEA BIOREM phát huy giá trị tốt nhất khi được đưa vào đúng lúc ao đang bắt đầu mất cân bằng,
+              trước khi vấn đề môi trường kéo theo stress và hụt hiệu suất.
             </p>
+            <ul class="check-list check-list--light">
+              <li>Ao có dấu hiệu nước xấu, bùn nhiều hoặc bắt đầu có mùi đáy.</li>
+              <li>Giai đoạn nuôi mật độ cao, cho ăn mạnh, lượng hữu cơ tăng nhanh.</li>
+              <li>Sau mưa, tảo biến động mạnh và nước đục hơn bình thường.</li>
+              <li>Gần về size, cần giữ nước bền để tránh rủi ro hụt nhịp tăng trưởng.</li>
+            </ul>
           </div>
 
-          <!-- Vòng lặp bế tắc -->
-          <div class="cycle fade-in">
-            <h3 class="headline-sm" style="margin-bottom: 6px; color: #ff6b5a;">Vòng lặp nguy hiểm</h3>
-            <p class="body-md" style="margin-bottom: 24px;">Khi một mắt xích yếu, cả hệ thống sụp theo dây chuyền:</p>
+          <div class="quick-panel">
+            <p class="eyebrow">Khi nào nên xin phác đồ riêng</p>
+            <h2>Chỉ cần có một trong các dấu hiệu này, nên để kỹ thuật xem tình huống cụ thể</h2>
+            <p>
+              Mỗi ao có mật độ, màu nước, lượng bùn và nhịp cho ăn khác nhau. Cùng một sản phẩm
+              nhưng cách dùng hiệu quả vẫn cần đặt vào đúng tình trạng ao thực tế.
+            </p>
 
-            <div class="cycle__steps">
-              <div class="cycle__step">
-                <span class="cycle__num">1</span>
-                <strong>Đáy bẩn, nước ô nhiễm</strong>
-                <p>Bùn tích tụ, hữu cơ phân hủy kỵ khí → sinh NH3, NO2, H2S → ao mất cân bằng.</p>
-              </div>
-              <div class="cycle__step">
-                <span class="cycle__num">2</span>
-                <strong>Vi sinh đường ruột rối loạn</strong>
-                <p>Tôm stress → Vibrio chiếm ưu thế trong ruột → niêm mạc ruột tổn thương.</p>
-              </div>
-              <div class="cycle__step">
-                <span class="cycle__num">3</span>
-                <strong>Hấp thu thức ăn kém</strong>
-                <p>Gan tụy suy yếu → ăn nhiều nhưng không hấp thu → phân thải nhiều → ô nhiễm thêm.</p>
-              </div>
-              <div class="cycle__step cycle__step--danger">
-                <span class="cycle__num">4</span>
-                <strong>EHP tấn công gan tụy</strong>
-                <p>Miễn dịch suy giảm + gan tụy yếu = điều kiện lý tưởng cho EHP. Tôm chậm lớn, FCR cao.</p>
-              </div>
-            </div>
-
-            <div class="cycle__loop">
-              Phân thải nhiều → ô nhiễm nước → quay lại bước 1 → vòng lặp ngày càng xấu hơn
+            <div class="quick-list">
+              <div class="quick-item">Đã xử lý nhiều lần nhưng đáy vẫn đen và nước vẫn nặng.</div>
+              <div class="quick-item">NH3 / NO2 tăng lặp lại sau mỗi đợt thời tiết xấu hoặc sau mưa.</div>
+              <div class="quick-item">Tôm phản ứng stress khi nước biến động dù khẩu phần vẫn giữ.</div>
+              <div class="quick-item">Cần một phác đồ môi trường rõ ràng thay vì xử lý rời rạc.</div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ═══ BỘ 3 GIẢI PHÁP ═══ -->
-      <section class="sec sec--surface">
+      <!-- ═══ MODULE NỔI BẬT: VÒNG XOẮN EHP & BỘ 3 GIẢI PHÁP ═══ -->
+      <section class="section section--ehp" id="ehp-module">
         <div class="shell">
-          <div class="center fade-in" style="margin-bottom: 48px;">
-            <p class="eyebrow eyebrow--accent">Bộ 3 Lallemand</p>
-            <h2 class="headline-md">Cắt đứt vòng lặp bế tắc<br>từ gốc</h2>
-            <p class="body-lg" style="max-width: 580px; margin: 16px auto 0;">
-              Mỗi sản phẩm xử lý một mắt xích. Kết hợp cả 3 mới đủ mạnh.
+          <div class="section-head section-head--center">
+            <p class="eyebrow eyebrow--light">Hiểu đúng để phòng đúng</p>
+            <h2>Vòng lặp bế tắc: Nước bẩn → Ruột yếu → EHP bùng phát</h2>
+            <p class="section-lead--ehp">
+              EHP (Enterocytozoon hepatopenaei) là ký sinh trùng tấn công gan tụy, khiến tôm chậm lớn,
+              hệ số chuyển đổi thức ăn (FCR) tăng vọt và thiệt hại kinh tế nghiêm trọng.
+              Nhưng EHP không tự bùng — nó bùng khi môi trường ao mất cân bằng và tôm suy yếu từ bên trong.
             </p>
           </div>
 
-          <div class="cards-3">
-            <div class="trio-card trio-card--biorem fade-in">
-              <div class="trio-card__icon"><img src="./assets/lalsea-biorem-packshot.svg" alt="BIOREM" /></div>
-              <span class="trio-card__badge">Mắt xích 1</span>
-              <h4>LALSEA BIOREM</h4>
-              <strong>Quản lý nước &amp; đáy ao</strong>
-              <ul>
-                <li>Phân hủy hữu cơ, giảm bùn đáy — cắt nguồn ô nhiễm.</li>
-                <li>Kiểm soát NH3 / NO2 — giảm stress cho tôm.</li>
-                <li>Ức chế Vibrio trong nước.</li>
-                <li>Ao ổn định → tôm ít stress → miễn dịch không suy giảm.</li>
-              </ul>
-              <div class="trio-card__tag">Nước sạch = nền tảng phòng bệnh</div>
+          <!-- VÒNG XOẮN -->
+          <div class="ehp-cycle">
+            <div class="ehp-cycle__intro">
+              <h3>Vòng lặp bế tắc nguy hiểm mà nhiều ao đang mắc phải</h3>
+              <p>Khi một mắt xích yếu đi, cả hệ thống sụp theo dây chuyền:</p>
             </div>
-            <div class="trio-card trio-card--probio fade-in fade-in-delay-1">
-              <div class="trio-card__icon"><img src="./assets/lalpack-probio.png" alt="PROBIO" /></div>
-              <span class="trio-card__badge">Mắt xích 2</span>
-              <h4>LALPACK PROBIO</h4>
-              <strong>Đường ruột khỏe &amp; hấp thu tốt</strong>
-              <ul>
-                <li>Tăng vi khuẩn có lợi (LAB) → ruột ổn định.</li>
-                <li>Cải thiện niêm mạc ruột → tăng hấp thu dinh dưỡng.</li>
-                <li>Tiêu hóa tốt → phân ít → nước sạch hơn.</li>
-                <li>Gan tụy khỏe → khó bị EHP xâm nhập.</li>
-              </ul>
-              <div class="trio-card__tag">Ruột khỏe = ít phân thải = ít ô nhiễm</div>
+            <div class="ehp-cycle__steps">
+              <article class="ehp-step">
+                <span class="ehp-step__num">1</span>
+                <div>
+                  <strong>Đáy bẩn, nước ô nhiễm</strong>
+                  <p>Bùn tích tụ, hữu cơ phân hủy kỵ khí → sinh khí độc NH3, NO2, H2S → môi trường mất cân bằng.</p>
+                </div>
+              </article>
+              <div class="ehp-arrow"></div>
+              <article class="ehp-step">
+                <span class="ehp-step__num">2</span>
+                <div>
+                  <strong>Hệ vi sinh đường ruột rối loạn</strong>
+                  <p>Tôm stress liên tục → vi khuẩn có hại (Vibrio) chiếm ưu thế trong ruột → niêm mạc ruột tổn thương.</p>
+                </div>
+              </article>
+              <div class="ehp-arrow"></div>
+              <article class="ehp-step">
+                <span class="ehp-step__num">3</span>
+                <div>
+                  <strong>Hấp thu thức ăn kém</strong>
+                  <p>Gan tụy và ruột suy yếu → tôm ăn nhiều nhưng không hấp thu → phân thải nhiều hơn → ô nhiễm thêm.</p>
+                </div>
+              </article>
+              <div class="ehp-arrow"></div>
+              <article class="ehp-step ehp-step--danger">
+                <span class="ehp-step__num">4</span>
+                <div>
+                  <strong>EHP tấn công gan tụy</strong>
+                  <p>Miễn dịch suy giảm + gan tụy đã yếu = điều kiện lý tưởng cho EHP bùng phát. Tôm chậm lớn, FCR cao, thiệt hại nặng.</p>
+                </div>
+              </article>
             </div>
-            <div class="trio-card trio-card--immune fade-in fade-in-delay-2">
-              <div class="trio-card__icon"><img src="./assets/lalpack-immune.png" alt="IMMUNE" /></div>
-              <span class="trio-card__badge">Mắt xích 3</span>
-              <h4>LALPACK IMMUNE</h4>
-              <strong>Miễn dịch mạnh &amp; chống oxy hóa</strong>
-              <ul>
-                <li>Gắn kết Vibrio, E.coli → đào thải qua phân.</li>
-                <li>Kích hoạt miễn dịch đa thụ thể, không viêm quá mức.</li>
-                <li>Chống oxy hóa → bảo vệ tế bào gan tụy.</li>
-                <li>Đủ sức đề kháng → EHP khó bùng.</li>
-              </ul>
-              <div class="trio-card__tag">Miễn dịch mạnh = lá chắn cuối cùng</div>
+            <div class="ehp-cycle__loop">
+              <span>Phân thải nhiều → ô nhiễm nước → quay lại bước 1 → vòng lặp ngày càng xấu hơn</span>
             </div>
           </div>
 
-          <!-- Công thức -->
-          <div class="formula fade-in">
-            <div class="formula__item formula__item--biorem">BIOREM<br><small>Nước &amp; đáy</small></div>
-            <span class="formula__op">+</span>
-            <div class="formula__item formula__item--probio">PROBIO<br><small>Đường ruột</small></div>
-            <span class="formula__op">+</span>
-            <div class="formula__item formula__item--immune">IMMUNE<br><small>Miễn dịch</small></div>
-            <span class="formula__op">+</span>
-            <div class="formula__item formula__item--practice">Thực hành tốt<br><small>Vận hành</small></div>
-            <span class="formula__op formula__op--eq">=</span>
-            <div class="formula__result">Phòng EHP<br>bền vững</div>
-          </div>
-
-          <!-- Thực hành -->
-          <div class="cards-4 fade-in">
-            <div class="card">
-              <div class="card__icon">&#x1F4A7;</div>
-              <h3 class="card__title">Quản lý nước chặt</h3>
-              <p class="card__body">Xi-phông đáy đều, kiểm soát lượng ăn, giữ NH3/NO2 dưới ngưỡng an toàn.</p>
-            </div>
-            <div class="card">
-              <div class="card__icon">&#x1F990;</div>
-              <h3 class="card__title">Dinh dưỡng &amp; ruột</h3>
-              <p class="card__body">Cho ăn đúng lượng, thức ăn chất lượng cao, kết hợp PROBIO giữ ruột ổn định.</p>
-            </div>
-            <div class="card">
-              <div class="card__icon">&#x1F6E1;</div>
-              <h3 class="card__title">An toàn sinh học</h3>
-              <p class="card__body">Kiểm tra giống PCR, khử trùng dụng cụ, hạn chế lây nhiễm chéo giữa ao.</p>
-            </div>
-            <div class="card">
-              <div class="card__icon">&#x1F4CA;</div>
-              <h3 class="card__title">Theo dõi liên tục</h3>
-              <p class="card__body">Đo nước hàng ngày, quan sát hành vi ăn, kiểm tra gan tụy — phát hiện sớm.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ═══════════════════════════════════════════════════════
-           LALPACK PROBIO + IMMUNE
-           ═══════════════════════════════════════════════════════ -->
-      <section class="sec sec--dark" id="lalpack">
-        <div class="shell">
-          <div class="center fade-in" style="margin-bottom: 48px;">
-            <p class="eyebrow eyebrow--accent">Bộ đôi bảo vệ từ bên trong</p>
-            <h2 class="headline-lg">LALPACK PROBIO<br>+ LALPACK IMMUNE</h2>
-            <p class="body-lg" style="max-width: 560px; margin: 16px auto 0;">
-              Đường ruột khỏe hơn. Miễn dịch mạnh hơn. Giảm rủi ro dịch bệnh suốt vụ nuôi.
-            </p>
-          </div>
-
-          <div class="duo">
-            <div class="duo__card duo__card--probio fade-in">
-              <div class="duo__img"><img src="./assets/lalpack-probio.png" alt="LALPACK PROBIO" /></div>
-              <span class="duo__tag duo__tag--probio">LALPACK PROBIO</span>
-              <h3 class="headline-sm">Bảo vệ đường ruột</h3>
-              <p class="body-md" style="margin: 12px 0 0;">
-                Kết hợp <em>Pediococcus acidilactici</em> MA18/5M, nấm men sống <em>S.c. boulardii</em>
-                và dẫn xuất thành tế bào nấm men.
+          <!-- BỘ 3 GIẢI PHÁP -->
+          <div class="trio-solution">
+            <div class="trio-solution__head">
+              <h3>Bộ 3 Lallemand — Cắt đứt vòng xoắn từ gốc</h3>
+              <p>
+                Phòng EHP không chỉ là xử lý mầm bệnh, mà là giữ cho cả hệ thống ao luôn ở trạng thái
+                mà ký sinh trùng không có cơ hội bùng phát. Mỗi sản phẩm xử lý một mắt xích — kết hợp cả 3 mới đủ mạnh.
               </p>
-              <ul class="checklist" style="margin-top: 16px;">
-                <li>Điều hòa hệ vi sinh đường ruột, tăng vi khuẩn có lợi.</li>
-                <li>Ức chế mạnh các chủng Vibrio trong ruột.</li>
-                <li>Cải thiện niêm mạc ruột, tăng hấp thu.</li>
-                <li>Trung hòa độc tố nhờ S.c. boulardii.</li>
+            </div>
+
+            <div class="trio-cards">
+              <article class="trio-card trio-card--biorem">
+                <div class="trio-card__icon">
+                  <img src="./assets/lalsea-biorem-packshot.svg" alt="LALSEA BIOREM" />
+                </div>
+                <div class="trio-card__badge">Mắt xích 1</div>
+                <h4>LALSEA BIOREM</h4>
+                <strong>Quản lý nước &amp; đáy ao</strong>
+                <ul>
+                  <li>Phân hủy hữu cơ, giảm bùn đáy — cắt nguồn ô nhiễm.</li>
+                  <li>Kiểm soát NH3 / NO2 — giảm stress cho tôm.</li>
+                  <li>Ức chế Vibrio trong nước — giảm áp lực mầm bệnh.</li>
+                  <li>Giữ ao ổn định → tôm ít stress → miễn dịch không suy giảm.</li>
+                </ul>
+                <div class="trio-card__tag">Nước sạch = nền tảng phòng bệnh</div>
+              </article>
+
+              <article class="trio-card trio-card--probio">
+                <div class="trio-card__icon">
+                  <img src="./assets/lalpack-probio.png" alt="LALPACK PROBIO" />
+                </div>
+                <div class="trio-card__badge">Mắt xích 2</div>
+                <h4>LALPACK PROBIO</h4>
+                <strong>Đường ruột khỏe &amp; hấp thu tốt</strong>
+                <ul>
+                  <li>Tăng vi khuẩn có lợi (LAB) → ruột ổn định, ít cơ hội cho Vibrio.</li>
+                  <li>Cải thiện niêm mạc ruột → tăng bề mặt hấp thu dinh dưỡng.</li>
+                  <li>Tôm tiêu hóa tốt hơn → phân ít hơn → nước sạch hơn.</li>
+                  <li>Gan tụy khỏe mạnh → khó bị EHP xâm nhập.</li>
+                </ul>
+                <div class="trio-card__tag">Ruột khỏe = ít phân thải = ít ô nhiễm</div>
+              </article>
+
+              <article class="trio-card trio-card--immune">
+                <div class="trio-card__icon">
+                  <img src="./assets/lalpack-immune.png" alt="LALPACK IMMUNE" />
+                </div>
+                <div class="trio-card__badge">Mắt xích 3</div>
+                <h4>LALPACK IMMUNE</h4>
+                <strong>Miễn dịch mạnh &amp; chống oxy hóa</strong>
+                <ul>
+                  <li>Gắn kết mầm bệnh (Vibrio, E.coli) → đào thải qua phân.</li>
+                  <li>Kích hoạt miễn dịch đa thụ thể → phản ứng nhanh, không viêm quá mức.</li>
+                  <li>Chống oxy hóa sơ cấp → bảo vệ tế bào gan tụy.</li>
+                  <li>Tôm đủ sức đề kháng → EHP khó bùng dù có mặt trong ao.</li>
+                </ul>
+                <div class="trio-card__tag">Miễn dịch mạnh = lá chắn cuối cùng</div>
+              </article>
+            </div>
+          </div>
+
+          <!-- THỰC HÀNH NUÔI HIỆU QUẢ -->
+          <div class="farming-practice">
+            <div class="farming-practice__head">
+              <h3>Bộ 3 + Thực hành nuôi hiệu quả = Phòng EHP bền vững</h3>
+              <p>
+                Sản phẩm tốt cần đi kèm vận hành đúng. Khi kết hợp bộ 3 Lallemand với thực hành quản lý tốt,
+                bạn tạo ra một hệ thống phòng thủ nhiều lớp mà EHP rất khó xuyên qua.
+              </p>
+            </div>
+            <div class="practice-grid">
+              <article class="practice-item">
+                <span class="practice-icon">&#x1F4A7;</span>
+                <strong>Quản lý nước chặt</strong>
+                <p>Xi-phông đáy đều, kiểm soát lượng ăn, giữ NH3/NO2 dưới ngưỡng an toàn + BIOREM hỗ trợ phân hủy hữu cơ liên tục.</p>
+              </article>
+              <article class="practice-item">
+                <span class="practice-icon">&#x1F990;</span>
+                <strong>Dinh dưỡng &amp; đường ruột</strong>
+                <p>Cho ăn đúng lượng, thức ăn chất lượng cao + PROBIO giữ hệ vi sinh ruột ổn định, tăng hấp thu, giảm phân thải.</p>
+              </article>
+              <article class="practice-item">
+                <span class="practice-icon">&#x1F6E1;</span>
+                <strong>An toàn sinh học</strong>
+                <p>Kiểm tra con giống PCR, khử trùng dụng cụ, hạn chế lây nhiễm chéo + IMMUNE nâng sức đề kháng sẵn sàng.</p>
+              </article>
+              <article class="practice-item">
+                <span class="practice-icon">&#x1F4CA;</span>
+                <strong>Theo dõi liên tục</strong>
+                <p>Đo chỉ số nước hàng ngày, quan sát hành vi ăn, kiểm tra gan tụy định kỳ — phát hiện sớm, xử lý kịp thời.</p>
+              </article>
+            </div>
+
+            <div class="practice-summary">
+              <div class="practice-summary__formula">
+                <span class="formula-item formula-item--biorem">BIOREM<br><small>Nước &amp; đáy</small></span>
+                <span class="formula-plus">+</span>
+                <span class="formula-item formula-item--probio">PROBIO<br><small>Đường ruột</small></span>
+                <span class="formula-plus">+</span>
+                <span class="formula-item formula-item--immune">IMMUNE<br><small>Miễn dịch</small></span>
+                <span class="formula-plus">+</span>
+                <span class="formula-item formula-item--practice">Thực hành tốt<br><small>Vận hành</small></span>
+                <span class="formula-equals">=</span>
+                <span class="formula-result">Phòng EHP<br>bền vững</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ═══ LALPACK PROBIO + IMMUNE TAB ═══ -->
+      <section class="section section--tint" id="lalpack">
+        <div class="shell">
+          <div class="section-head">
+            <p class="eyebrow">Bộ đôi bảo vệ đường ruột &amp; miễn dịch</p>
+            <h2>LALPACK PROBIO + LALPACK IMMUNE</h2>
+            <p>
+              Kết hợp 2 sản phẩm chuyên biệt từ Lallemand để bảo vệ tôm từ bên trong:
+              đường ruột khỏe hơn, miễn dịch mạnh hơn, giảm rủi ro dịch bệnh suốt vụ nuôi.
+            </p>
+          </div>
+
+          <div class="lalpack-duo">
+            <!-- LALPACK PROBIO -->
+            <div class="lalpack-card lalpack-card--probio">
+              <div class="lalpack-card__img">
+                <img src="./assets/lalpack-probio.png" alt="Bao bì sản phẩm LALPACK PROBIO" />
+              </div>
+              <div class="lalpack-card__head">
+                <span class="tag tag--probio">LALPACK PROBIO</span>
+                <span class="lalpack-card__target">Bảo vệ đường ruột</span>
+              </div>
+              <h3>Bảo vệ đường ruột — tăng hiệu suất tiêu hóa</h3>
+              <p>
+                Kết hợp probiotic <em>Pediococcus acidilactici</em> MA18/5M (BACTOCELL),
+                nấm men sống <em>S.c. boulardii</em> CNCM I-1079 (LEVUCELL SB) và dẫn xuất thành tế bào nấm men.
+              </p>
+              <ul class="check-list">
+                <li>Điều hòa hệ vi sinh đường ruột, tăng vi khuẩn có lợi (LAB).</li>
+                <li>Ức chế mạnh các chủng Vibrio gây bệnh trong đường ruột.</li>
+                <li>Cải thiện cấu trúc niêm mạc ruột, tăng hấp thu dinh dưỡng.</li>
+                <li>Trung hòa độc tố vi khuẩn nhờ đặc tính riêng của S.c. boulardii.</li>
               </ul>
-              <div class="duo__spec" data-lalpack-price="probio">
+              <div class="lalpack-card__spec" data-lalpack-price="probio">
                 <span data-price-spec>500g x 10 gói / thùng</span>
                 <strong data-price-value>3.860.000 đ</strong>
               </div>
             </div>
 
-            <div class="duo__card duo__card--immune fade-in fade-in-delay-1">
-              <div class="duo__img"><img src="./assets/lalpack-immune.png" alt="LALPACK IMMUNE" /></div>
-              <span class="duo__tag duo__tag--immune">LALPACK IMMUNE</span>
-              <h3 class="headline-sm">Kích thích miễn dịch</h3>
-              <p class="body-md" style="margin: 12px 0 0;">
-                Phối hợp phân đoạn nấm men chuyên biệt: liên kết mầm bệnh mạnh,
-                điều hòa miễn dịch đa thụ thể và cân bằng chống oxy hóa.
+            <!-- LALPACK IMMUNE -->
+            <div class="lalpack-card lalpack-card--immune">
+              <div class="lalpack-card__img">
+                <img src="./assets/lalpack-immune.png" alt="Bao bì sản phẩm LALPACK IMMUNE" />
+              </div>
+              <div class="lalpack-card__head">
+                <span class="tag tag--immune">LALPACK IMMUNE</span>
+                <span class="lalpack-card__target">Kích thích miễn dịch</span>
+              </div>
+              <h3>Kích thích miễn dịch — tăng sức đề kháng</h3>
+              <p>
+                Phối hợp các phân đoạn nấm men chuyên biệt: liên kết mầm bệnh mạnh (YANG),
+                điều hòa miễn dịch đa thụ thể và cân bằng chống oxy hóa (selenium yeast).
               </p>
-              <ul class="checklist" style="margin-top: 16px;">
-                <li>Gắn kết và loại bỏ Vibrio, E.coli trong ruột.</li>
-                <li>Kích hoạt miễn dịch cân bằng, không viêm quá mức.</li>
-                <li>Chống oxy hóa sơ cấp — trung hòa ROS.</li>
-                <li>An toàn dùng lâu dài, không suy giảm miễn dịch.</li>
+              <ul class="check-list">
+                <li>Gắn kết và loại bỏ Vibrio, E.coli trực tiếp trong ruột.</li>
+                <li>Kích hoạt miễn dịch cân bằng, không gây viêm quá mức.</li>
+                <li>Chống oxy hóa sơ cấp — trung hòa ROS hiệu quả hơn.</li>
+                <li>An toàn dùng lâu dài, không gây suy giảm miễn dịch.</li>
               </ul>
-              <div class="duo__spec" data-lalpack-price="immune">
+              <div class="lalpack-card__spec" data-lalpack-price="immune">
                 <span data-price-spec>500g x 10 gói / thùng</span>
                 <strong data-price-value>3.710.000 đ</strong>
               </div>
             </div>
           </div>
+
+          <div class="lalpack-synergy">
+            <h3>Tại sao nên dùng song song cả hai?</h3>
+            <div class="synergy-grid">
+              <article class="synergy-item">
+                <span class="step-number">01</span>
+                <div>
+                  <strong>PROBIO giữ ruột khỏe</strong>
+                  <p>Đường ruột ổn định, hấp thu tốt hơn, ít cơ hội cho mầm bệnh bám dính.</p>
+                </div>
+              </article>
+              <article class="synergy-item">
+                <span class="step-number">02</span>
+                <div>
+                  <strong>IMMUNE nâng đề kháng</strong>
+                  <p>Hệ miễn dịch được kích hoạt sẵn sàng, tôm phản ứng nhanh hơn khi gặp stress.</p>
+                </div>
+              </article>
+              <article class="synergy-item">
+                <span class="step-number">03</span>
+                <div>
+                  <strong>Kết hợp = bảo vệ toàn diện</strong>
+                  <p>Bên trong (ruột) và bên ngoài (miễn dịch) cùng được củng cố — giảm rủi ro dịch bệnh, tăng tỷ lệ sống.</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- ═══════════════════════════════════════════════════════
-           BẢNG GIÁ (light section)
-           ═══════════════════════════════════════════════════════ -->
-      <section class="sec sec--light" id="pricing">
+      <!-- ═══ PRICING ═══ -->
+      <section class="section" id="pricing">
         <div class="shell">
-          <div class="center fade-in" style="margin-bottom: 48px;">
+          <div class="section-head">
             <p class="eyebrow">Bảng giá</p>
-            <h2 class="headline-md" style="color: var(--dark-surface);">Giá sản phẩm nhóm Lallemand</h2>
-            <p class="body-lg body-lg--light" style="max-width: 480px; margin: 12px auto 0;">
-              Áp dụng từ 15/01/2026 — Công ty TNHH Thần Vương phân phối chính hãng.
-            </p>
+            <h2>Giá sản phẩm nhóm Lallemand</h2>
+            <p>Áp dụng từ ngày 15/01/2026 — Công ty TNHH Thần Vương phân phối chính hãng.</p>
           </div>
 
-          <div class="price-grid">
-            <div class="price-card fade-in" data-price-product="biorem">
-              <div class="price-card__head price-card__head--biorem" data-price-name>LALSEA BIOREM</div>
-              <div class="price-card__body">
-                <p class="price-card__spec" data-price-spec>250g x 20 gói / thùng</p>
-                <div class="price-card__price" data-price-value>8.200.000 <small>đ / thùng</small></div>
-                <div class="price-card__bonus" data-price-bonus>Tặng 4 gói</div>
-                <p class="price-card__note" data-price-note>Mua 1–4 thùng</p>
+          <div class="pricing-grid">
+            <article class="pricing-card" data-price-product="biorem">
+              <div class="pricing-card__head pricing-card__head--biorem">
+                <span data-price-name>LALSEA BIOREM</span>
               </div>
-            </div>
-            <div class="price-card fade-in fade-in-delay-1" data-price-product="immune">
-              <div class="price-card__head price-card__head--immune" data-price-name>LALPACK IMMUNE</div>
-              <div class="price-card__body">
-                <p class="price-card__spec" data-price-spec>500g x 10 gói / thùng</p>
-                <div class="price-card__price" data-price-value>3.710.000 <small>đ / thùng</small></div>
-                <div class="price-card__bonus" data-price-bonus>Tặng 2 gói</div>
-                <p class="price-card__note" data-price-note>Mua 1–9 thùng</p>
+              <div class="pricing-card__body">
+                <p class="pricing-card__spec" data-price-spec>250g x 20 gói / thùng</p>
+                <div class="pricing-card__price" data-price-value>8.200.000 <small>đ / thùng</small></div>
+                <div class="pricing-card__bonus" data-price-bonus>Tặng 4 gói</div>
+                <p class="pricing-card__note" data-price-note>Mua 1–4 thùng</p>
               </div>
-            </div>
-            <div class="price-card fade-in fade-in-delay-2" data-price-product="probio">
-              <div class="price-card__head price-card__head--probio" data-price-name>LALPACK PROBIO</div>
-              <div class="price-card__body">
-                <p class="price-card__spec" data-price-spec>500g x 10 gói / thùng</p>
-                <div class="price-card__price" data-price-value>3.860.000 <small>đ / thùng</small></div>
-                <div class="price-card__bonus" data-price-bonus>Tặng 2 gói</div>
-                <p class="price-card__note" data-price-note>Mua 1–9 thùng</p>
+            </article>
+
+            <article class="pricing-card" data-price-product="immune">
+              <div class="pricing-card__head pricing-card__head--immune">
+                <span data-price-name>LALPACK IMMUNE</span>
               </div>
-            </div>
+              <div class="pricing-card__body">
+                <p class="pricing-card__spec" data-price-spec>500g x 10 gói / thùng</p>
+                <div class="pricing-card__price" data-price-value>3.710.000 <small>đ / thùng</small></div>
+                <div class="pricing-card__bonus" data-price-bonus>Tặng 2 gói</div>
+                <p class="pricing-card__note" data-price-note>Mua 1–9 thùng</p>
+              </div>
+            </article>
+
+            <article class="pricing-card" data-price-product="probio">
+              <div class="pricing-card__head pricing-card__head--probio">
+                <span data-price-name>LALPACK PROBIO</span>
+              </div>
+              <div class="pricing-card__body">
+                <p class="pricing-card__spec" data-price-spec>500g x 10 gói / thùng</p>
+                <div class="pricing-card__price" data-price-value>3.860.000 <small>đ / thùng</small></div>
+                <div class="pricing-card__bonus" data-price-bonus>Tặng 2 gói</div>
+                <p class="pricing-card__note" data-price-note>Mua 1–9 thùng</p>
+              </div>
+            </article>
           </div>
 
-          <div class="combo fade-in" data-price-combo>
-            <div>
-              <span class="combo__badge" data-combo-badge>Combo dùng thử</span>
-              <h3 class="combo__title" data-combo-title>Combo giá dùng thử — chỉ cho đơn đầu tiên</h3>
-              <ul class="combo__items" data-combo-items>
-                <li><strong>2 gói</strong> LALSEA BIOREM</li>
-                <li><strong>1 gói</strong> LALPACK IMMUNE</li>
-                <li><strong>1 gói</strong> LALPACK PROBIO</li>
-              </ul>
-              <p class="combo__condition" data-combo-condition>Chỉ áp dụng cho đơn đặt hàng lần đầu tiên.</p>
-            </div>
-            <div class="combo__right">
-              <div class="combo__price" data-combo-price>1.553.000 <small>đ</small></div>
-              <a class="btn btn--primary" href="#form" data-combo-cta>Đặt combo dùng thử</a>
+          <!-- COMBO DÙNG THỬ -->
+          <div class="combo-trial" data-price-combo>
+            <div class="combo-trial__badge" data-combo-badge>Combo dùng thử</div>
+            <div class="combo-trial__content">
+              <div class="combo-trial__info">
+                <h3 data-combo-title>Combo giá dùng thử — chỉ cho đơn đầu tiên</h3>
+                <ul class="combo-trial__list" data-combo-items>
+                  <li><strong>2 gói</strong> LALSEA BIOREM</li>
+                  <li><strong>1 gói</strong> LALPACK IMMUNE</li>
+                  <li><strong>1 gói</strong> LALPACK PROBIO</li>
+                </ul>
+                <p class="combo-trial__condition" data-combo-condition>Chỉ áp dụng cho đơn đặt hàng lần đầu tiên.</p>
+              </div>
+              <div class="combo-trial__price-block">
+                <div class="combo-trial__price" data-combo-price>1.553.000 <small>đ</small></div>
+                <a class="button button--primary" href="#form" data-combo-cta>Đặt combo dùng thử</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ═══ FORM (light) ═══ -->
-      <section class="sec sec--light" id="form" style="padding-top: 0;">
-        <div class="shell">
-          <div class="form-card fade-in">
-            <div class="center" style="margin-bottom: 28px;">
+      <section class="section" id="form">
+        <div class="shell form-shell">
+          <div class="form-card">
+            <div class="section-head section-head--compact">
               <p class="eyebrow">Liên hệ tư vấn</p>
-              <h2 class="headline-sm" style="color: var(--dark-surface);">Gửi thông tin ao để nhận phác đồ xử lý riêng</h2>
-              <p class="body-md body-md--dark">Đội kỹ thuật sẽ liên hệ trong vòng 24 giờ.</p>
+              <h2>Gửi thông tin ao để nhận phác đồ xử lý riêng</h2>
+              <p>
+                Đội kỹ thuật sẽ liên hệ trong vòng 24 giờ với phác đồ phù hợp điều kiện ao thực tế của bạn.
+              </p>
             </div>
 
-            <form class="landing-form" data-lead-form style="display:grid; gap:20px;">
+            <form class="landing-form" data-lead-form>
               <div class="field-grid">
                 <label class="field">
                   <span>Họ tên</span>
@@ -509,24 +761,35 @@
                 </label>
                 <label class="field">
                   <span>Diện tích ao</span>
-                  <input type="text" name="pondArea" placeholder="Ví dụ: 2.000 m²" />
+                  <input type="text" name="pondArea" placeholder="Ví dụ: 2.000 m2" />
                 </label>
                 <label class="field">
                   <span>Tình trạng hiện tại</span>
-                  <input type="text" name="issue" placeholder="Bùn nhiều, nước đục, NH3 tăng..." required />
+                  <input
+                    type="text"
+                    name="issue"
+                    placeholder="Bùn nhiều, nước đục, NH3 tăng..."
+                    required
+                  />
                 </label>
               </div>
+
               <label class="field">
                 <span>Mô tả thêm</span>
-                <textarea name="notes" placeholder="Màu nước, mật độ, chỉ số NH3 / NO2, diễn biến sau mưa..."></textarea>
+                <textarea
+                  name="notes"
+                  placeholder="Màu nước, mật độ, chỉ số NH3 / NO2, diễn biến sau mưa..."
+                ></textarea>
               </label>
 
               <input type="hidden" name="product" value="LALSEA BIOREM" />
               <input type="hidden" name="landingPage" value="standalone/lalsea-biorem" />
               <input type="hidden" name="pageUrl" value="" data-page-url />
 
-              <div style="text-align:center;">
-                <button class="btn btn--primary" type="submit" data-submit-button style="min-width: 240px;">Nhận tư vấn ngay</button>
+              <div class="action-row">
+                <button class="button button--primary" type="submit" data-submit-button>
+                  Nhận tư vấn ngay
+                </button>
               </div>
 
               <p class="form-status" data-form-status aria-live="polite"></p>
@@ -538,49 +801,39 @@
           </div>
         </div>
       </section>
-
     </main>
 
-    <!-- Lightbox -->
     <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
       <button class="lightbox__close" id="lightbox-close" aria-label="Đóng">&#x2715;</button>
       <img id="lightbox-img" src="" alt="" />
     </div>
 
     <script>
-      // ── Scroll fade-in (IntersectionObserver) ──
       (function () {
-        var els = document.querySelectorAll('.fade-in');
-        if (!('IntersectionObserver' in window)) {
-          els.forEach(function (el) { el.classList.add('is-visible'); });
-          return;
-        }
-        var observer = new IntersectionObserver(function (entries) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('is-visible');
-              observer.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.12 });
-        els.forEach(function (el) { observer.observe(el); });
-      })();
+        const lightbox = document.getElementById('lightbox');
+        const lbImg = document.getElementById('lightbox-img');
 
-      // ── Lightbox ──
-      (function () {
-        var lb = document.getElementById('lightbox');
-        var img = document.getElementById('lightbox-img');
-        document.querySelectorAll('.visual-card__frame img').forEach(function (el) {
-          el.addEventListener('click', function () {
-            img.src = el.src; img.alt = el.alt;
-            lb.classList.add('is-open');
+        document.querySelectorAll('.media-module-card .media-module__frame img').forEach(function (img) {
+          img.addEventListener('click', function () {
+            lbImg.src = img.src;
+            lbImg.alt = img.alt;
+            lightbox.classList.add('is-open');
             document.body.style.overflow = 'hidden';
           });
         });
-        function close() { lb.classList.remove('is-open'); document.body.style.overflow = ''; }
+
+        function close() {
+          lightbox.classList.remove('is-open');
+          document.body.style.overflow = '';
+        }
+
         document.getElementById('lightbox-close').addEventListener('click', close);
-        lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
-        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+        lightbox.addEventListener('click', function (e) {
+          if (e.target === lightbox) close();
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') close();
+        });
       })();
     </script>
   </body>
