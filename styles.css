@@ -254,6 +254,39 @@ code {
   color: #fff;
 }
 
+.site-nav__link--alert {
+  position: relative;
+  background: rgba(220, 53, 34, 0.1);
+  border: 1px solid rgba(220, 53, 34, 0.35);
+  color: #dc3522;
+  animation: nav-alert-pulse 2s ease-in-out infinite;
+}
+
+.site-nav__link--alert:hover {
+  background: rgba(220, 53, 34, 0.18);
+  color: #b22a1a;
+}
+
+.site-nav__link--alert::before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: inherit;
+  border: 2px solid rgba(220, 53, 34, 0.4);
+  animation: nav-alert-ring 2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes nav-alert-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(220, 53, 34, 0); }
+  50% { box-shadow: 0 0 12px 3px rgba(220, 53, 34, 0.3); }
+}
+
+@keyframes nav-alert-ring {
+  0%, 100% { opacity: 0; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
 .site-nav__phone {
   display: inline-flex;
   align-items: center;
