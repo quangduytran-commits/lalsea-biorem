@@ -12,10 +12,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./pricing-config.js"></script>
+    <script src="./pricing-render.js" defer></script>
     <script src="./lead-config.js" defer></script>
     <script src="./lead-submit.js" defer></script>
   </head>
   <body>
+    <nav class="site-nav">
+      <div class="shell site-nav__inner">
+        <span class="site-nav__brand">Lallemand Aquaculture</span>
+        <div class="site-nav__links">
+          <a href="#" class="site-nav__link is-active" data-tab="biorem">LALSEA BIOREM</a>
+          <a href="#lalpack" class="site-nav__link" data-tab="lalpack">LALPACK PROBIO + IMMUNE</a>
+          <a href="#pricing" class="site-nav__link">Bảng giá</a>
+          <a href="#form" class="site-nav__link">Liên hệ</a>
+        </div>
+      </div>
+    </nav>
     <main class="lalsea-page">
       <section class="hero">
         <div class="shell hero__grid">
@@ -350,6 +363,164 @@
               <div class="quick-item">NH3 / NO2 tăng lặp lại sau mỗi đợt thời tiết xấu hoặc sau mưa.</div>
               <div class="quick-item">Tôm phản ứng stress khi nước biến động dù khẩu phần vẫn giữ.</div>
               <div class="quick-item">Cần một phác đồ môi trường rõ ràng thay vì xử lý rời rạc.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ LALPACK PROBIO + IMMUNE TAB ═══ -->
+      <section class="section section--tint" id="lalpack">
+        <div class="shell">
+          <div class="section-head">
+            <p class="eyebrow">Bộ đôi bảo vệ đường ruột &amp; miễn dịch</p>
+            <h2>LALPACK PROBIO + LALPACK IMMUNE</h2>
+            <p>
+              Kết hợp 2 sản phẩm chuyên biệt từ Lallemand để bảo vệ tôm từ bên trong:
+              đường ruột khỏe hơn, miễn dịch mạnh hơn, giảm rủi ro dịch bệnh suốt vụ nuôi.
+            </p>
+          </div>
+
+          <div class="lalpack-duo">
+            <!-- LALPACK PROBIO -->
+            <div class="lalpack-card lalpack-card--probio">
+              <div class="lalpack-card__head">
+                <span class="tag tag--probio">LALPACK PROBIO</span>
+                <span class="lalpack-card__target">Bảo vệ đường ruột</span>
+              </div>
+              <h3>Gut Protection — tăng hiệu suất tiêu hóa</h3>
+              <p>
+                Kết hợp probiotic <em>Pediococcus acidilactici</em> MA18/5M (BACTOCELL),
+                nấm men sống <em>S.c. boulardii</em> CNCM I-1079 (LEVUCELL SB) và dẫn xuất thành tế bào nấm men.
+              </p>
+              <ul class="check-list">
+                <li>Điều hòa hệ vi sinh đường ruột, tăng vi khuẩn có lợi (LAB).</li>
+                <li>Ức chế mạnh các chủng Vibrio gây bệnh trong đường ruột.</li>
+                <li>Cải thiện cấu trúc niêm mạc ruột, tăng hấp thu dinh dưỡng.</li>
+                <li>Trung hòa độc tố vi khuẩn nhờ đặc tính riêng của S.c. boulardii.</li>
+              </ul>
+              <div class="lalpack-card__spec" data-lalpack-price="probio">
+                <span data-price-spec>500g x 10 gói / thùng</span>
+                <strong data-price-value>3.860.000 đ</strong>
+              </div>
+            </div>
+
+            <!-- LALPACK IMMUNE -->
+            <div class="lalpack-card lalpack-card--immune">
+              <div class="lalpack-card__head">
+                <span class="tag tag--immune">LALPACK IMMUNE</span>
+                <span class="lalpack-card__target">Kích thích miễn dịch</span>
+              </div>
+              <h3>Immune Stimulation — tăng sức đề kháng</h3>
+              <p>
+                Phối hợp các phân đoạn nấm men chuyên biệt: liên kết mầm bệnh mạnh (YANG),
+                điều hòa miễn dịch đa thụ thể và cân bằng chống oxy hóa (selenium yeast).
+              </p>
+              <ul class="check-list">
+                <li>Gắn kết và loại bỏ Vibrio, E.coli trực tiếp trong ruột.</li>
+                <li>Kích hoạt miễn dịch cân bằng, không gây viêm quá mức.</li>
+                <li>Chống oxy hóa sơ cấp — trung hòa ROS hiệu quả hơn.</li>
+                <li>An toàn dùng lâu dài, không gây suy giảm miễn dịch.</li>
+              </ul>
+              <div class="lalpack-card__spec" data-lalpack-price="immune">
+                <span data-price-spec>500g x 10 gói / thùng</span>
+                <strong data-price-value>3.710.000 đ</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="lalpack-synergy">
+            <h3>Tại sao nên dùng song song cả hai?</h3>
+            <div class="synergy-grid">
+              <article class="synergy-item">
+                <span class="step-number">01</span>
+                <div>
+                  <strong>PROBIO giữ ruột khỏe</strong>
+                  <p>Đường ruột ổn định, hấp thu tốt hơn, ít cơ hội cho mầm bệnh bám dính.</p>
+                </div>
+              </article>
+              <article class="synergy-item">
+                <span class="step-number">02</span>
+                <div>
+                  <strong>IMMUNE nâng đề kháng</strong>
+                  <p>Hệ miễn dịch được kích hoạt sẵn sàng, tôm phản ứng nhanh hơn khi gặp stress.</p>
+                </div>
+              </article>
+              <article class="synergy-item">
+                <span class="step-number">03</span>
+                <div>
+                  <strong>Kết hợp = bảo vệ toàn diện</strong>
+                  <p>Bên trong (ruột) và bên ngoài (miễn dịch) cùng được củng cố — giảm rủi ro dịch bệnh, tăng tỷ lệ sống.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ PRICING ═══ -->
+      <section class="section" id="pricing">
+        <div class="shell">
+          <div class="section-head">
+            <p class="eyebrow">Bảng giá</p>
+            <h2>Giá sản phẩm nhóm Lallemand</h2>
+            <p>Áp dụng từ ngày 15/01/2026 — Công ty TNHH Thần Vương phân phối chính hãng.</p>
+          </div>
+
+          <div class="pricing-grid">
+            <article class="pricing-card" data-price-product="biorem">
+              <div class="pricing-card__head pricing-card__head--biorem">
+                <span data-price-name>LALSEA BIOREM</span>
+              </div>
+              <div class="pricing-card__body">
+                <p class="pricing-card__spec" data-price-spec>250g x 20 gói / thùng</p>
+                <div class="pricing-card__price" data-price-value>8.200.000 <small>đ / thùng</small></div>
+                <div class="pricing-card__bonus" data-price-bonus>Tặng 4 gói</div>
+                <p class="pricing-card__note" data-price-note>Mua 1–4 thùng</p>
+              </div>
+            </article>
+
+            <article class="pricing-card" data-price-product="immune">
+              <div class="pricing-card__head pricing-card__head--immune">
+                <span data-price-name>LALPACK IMMUNE</span>
+              </div>
+              <div class="pricing-card__body">
+                <p class="pricing-card__spec" data-price-spec>500g x 10 gói / thùng</p>
+                <div class="pricing-card__price" data-price-value>3.710.000 <small>đ / thùng</small></div>
+                <div class="pricing-card__bonus" data-price-bonus>Tặng 2 gói</div>
+                <p class="pricing-card__note" data-price-note>Mua 1–9 thùng</p>
+              </div>
+            </article>
+
+            <article class="pricing-card" data-price-product="probio">
+              <div class="pricing-card__head pricing-card__head--probio">
+                <span data-price-name>LALPACK PROBIO</span>
+              </div>
+              <div class="pricing-card__body">
+                <p class="pricing-card__spec" data-price-spec>500g x 10 gói / thùng</p>
+                <div class="pricing-card__price" data-price-value>3.860.000 <small>đ / thùng</small></div>
+                <div class="pricing-card__bonus" data-price-bonus>Tặng 2 gói</div>
+                <p class="pricing-card__note" data-price-note>Mua 1–9 thùng</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- COMBO DÙNG THỬ -->
+          <div class="combo-trial" data-price-combo>
+            <div class="combo-trial__badge" data-combo-badge>Combo dùng thử</div>
+            <div class="combo-trial__content">
+              <div class="combo-trial__info">
+                <h3 data-combo-title>Combo giá dùng thử — chỉ cho đơn đầu tiên</h3>
+                <ul class="combo-trial__list" data-combo-items>
+                  <li><strong>2 gói</strong> LALSEA BIOREM</li>
+                  <li><strong>1 gói</strong> LALPACK IMMUNE</li>
+                  <li><strong>1 gói</strong> LALPACK PROBIO</li>
+                </ul>
+                <p class="combo-trial__condition" data-combo-condition>Chỉ áp dụng cho đơn đặt hàng lần đầu tiên.</p>
+              </div>
+              <div class="combo-trial__price-block">
+                <div class="combo-trial__price" data-combo-price>1.553.000 <small>đ</small></div>
+                <a class="button button--primary" href="#form" data-combo-cta>Đặt combo dùng thử</a>
+              </div>
             </div>
           </div>
         </div>
