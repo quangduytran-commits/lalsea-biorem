@@ -1115,31 +1115,54 @@ p {
 
 .strain-feature {
   display: flex;
-  gap: 12px;
-  padding: 16px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  padding: 22px 18px;
   border-radius: var(--radius-md);
   background: var(--bg-white);
   border: 1px solid var(--border);
 }
 
 .strain-feature__icon {
-  font-size: 24px;
-  flex-shrink: 0;
+  font-size: 40px;
   line-height: 1;
+  margin-bottom: 4px;
 }
 
 .strain-feature strong {
   display: block;
   margin-bottom: 6px;
-  font-size: 14px;
+  font-size: 17px;
   color: var(--ink);
 }
 
 .strain-feature p {
   margin: 0;
-  font-size: 13px;
-  line-height: 1.55;
+  font-size: 15px;
+  line-height: 1.65;
   color: var(--muted);
+}
+
+/* ── Strain glow animation ── */
+
+.strain-highlight--glow {
+  animation: strain-glow 3s ease-in-out infinite;
+}
+
+@keyframes strain-glow {
+  0%, 100% {
+    border-color: var(--accent-border);
+    box-shadow: 0 0 0 0 transparent;
+  }
+  50% {
+    border-color: var(--accent);
+    box-shadow:
+      0 0 20px rgba(71, 187, 195, 0.2),
+      0 0 40px rgba(71, 187, 195, 0.1),
+      inset 0 0 12px rgba(71, 187, 195, 0.05);
+  }
 }
 
 .strain-highlight__note {
