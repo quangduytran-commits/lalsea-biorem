@@ -719,8 +719,8 @@ p {
 
 .hero-card__body {
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
-  gap: 28px;
+  grid-template-columns: 1fr;
+  gap: 24px;
   align-items: start;
   margin-top: 24px;
 }
@@ -748,10 +748,10 @@ p {
 }
 
 .media-module__frame--packshot {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 16 / 7;
   display: grid;
   place-items: center;
-  padding: 16px;
+  padding: 20px;
 }
 
 .media-module__frame img {
@@ -782,7 +782,12 @@ p {
 
 .summary-card {
   display: grid;
-  gap: 16px;
+  gap: 18px;
+}
+
+.summary-card p {
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 .summary-card h2,
@@ -806,10 +811,11 @@ p {
 
 .check-list li {
   position: relative;
-  padding-left: 20px;
-  margin-top: 10px;
+  padding-left: 22px;
+  margin-top: 12px;
+  font-size: 16px;
   color: var(--muted);
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .check-list li::before {
@@ -863,6 +869,7 @@ p {
 }
 
 .protocol-item span {
+  font-size: 16px;
   color: var(--ink);
   font-weight: 700;
 }
@@ -1167,11 +1174,11 @@ p {
 
 .strain-highlight__note {
   margin: 0;
-  padding: 12px 16px;
+  padding: 14px 18px;
   border-radius: var(--radius-sm);
   background: var(--bg-white);
   border: 1px solid var(--border);
-  font-size: 13px;
+  font-size: 15px;
   color: var(--muted);
   line-height: 1.6;
 }
