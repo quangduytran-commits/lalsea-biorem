@@ -164,15 +164,16 @@
   }
 
   // Always fetch fresh in background
-  fetch(config.sheetApiUrl)
+  fetch(config.sheetApiUrl, { redirect: "follow" })
     .then(function (res) { return res.json(); })
     .then(function (data) {
       if (data && !data.error) {
         setCache(data);
         render(data);
+        console.log("[CMS] Loaded " + Object.keys(data.content || {}).length + " content keys from Sheet");
       }
     })
-    .catch(function () {
-      // Fail silently — HTML default content stays visible
+    .catch(function (err) {
+      console.warn("[CMS] Fetch failed, using HTML defaults:", err.message || err);
     });
 })();
