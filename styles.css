@@ -748,10 +748,11 @@ p {
 }
 
 .media-module__frame--packshot {
-  aspect-ratio: 16 / 7;
+  aspect-ratio: 16 / 9;
   display: grid;
   place-items: center;
-  padding: 20px;
+  padding: 10px;
+  overflow: hidden;
 }
 
 .media-module__frame img {
@@ -761,9 +762,10 @@ p {
 }
 
 .media-module__frame--packshot img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  object-position: center 40%;
 }
 
 .media-module__foot code,
