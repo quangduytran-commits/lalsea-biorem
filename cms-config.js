@@ -7,7 +7,7 @@
 
 window.CMS_CONFIG = {
   // ← DÁN URL WEB APP CỦA BẠN VÀO ĐÂY
-  sheetApiUrl: "",
+  sheetApiUrl: "https://script.google.com/macros/s/AKfycbzMBUTcVKaNruumiY34ipbtPSOlszRiqj5YWfkBQCvu57HcYQSUxtcJYmpXkv3MV6DW/exec",
 
   // Bật/tắt CMS (nếu tắt, trang dùng nội dung mặc định trong HTML)
   enabled: true,
