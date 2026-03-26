@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./styles.css" />
     <script src="./pricing-config.js"></script>
     <script src="./pricing-render.js" defer></script>
+    <script src="./cms-config.js"></script>
+    <script src="./cms-render.js" defer></script>
     <script src="./lead-config.js" defer></script>
     <script src="./lead-submit.js" defer></script>
   </head>
@@ -21,7 +23,7 @@
     <nav class="site-nav">
       <div class="shell site-nav__inner">
         <span class="site-nav__brand">Lallemand Thủy sản</span>
-        <a class="site-nav__phone" href="tel:0867957568">&#x1F4DE; Liên hệ / Zalo: 0867 957 568</a>
+        <a class="site-nav__phone" href="tel:0867957568" data-cms-phone>&#x1F4DE; Liên hệ / Zalo: 0867 957 568</a>
         <div class="site-nav__links">
           <a href="#" class="site-nav__link is-active" data-tab="biorem">LALSEA BIOREM</a>
           <a href="#lalpack" class="site-nav__link site-nav__link--wrap" data-tab="lalpack">LALPACK<br>PROBIO + IMMUNE</a>
@@ -35,13 +37,13 @@
       <section class="hero">
         <div class="shell hero__grid">
           <div class="hero__content">
-            <div class="alert-pill">Nước xấu – đáy bẩn – khí độc tăng?</div>
-            <p class="eyebrow">Giải pháp vi sinh quản lý nước cho ao tôm</p>
-            <h1>
+            <div class="alert-pill" data-cms="hero_alert">Nước xấu – đáy bẩn – khí độc tăng?</div>
+            <p class="eyebrow" data-cms="hero_eyebrow">Giải pháp vi sinh quản lý nước cho ao tôm</p>
+            <h1 data-cms="hero_title">
               LALSEA BIOREM
               <span>Dọn sạch đáy, giữ nước ổn và giảm áp lực khí độc nhanh hơn</span>
             </h1>
-            <p class="hero__lead">
+            <p class="hero__lead" data-cms="hero_lead">
               Nếu bạn đang đánh vi sinh liên tục mà nước vẫn xấu, bùn vẫn dày và tôm vẫn yếu,
               vấn đề thường không nằm ở mặt nước mà nằm ở nền đáy và tải hữu cơ chưa được xử lý đúng.
             </p>
@@ -789,7 +791,7 @@
               <p class="form-status" data-form-status aria-live="polite"></p>
 
               <div class="form-phone">
-                Hoặc liên hệ trực tiếp: <a href="tel:0867957568"><strong>&#x1F4DE; Zalo / Điện thoại: 0867 957 568</strong></a>
+                Hoặc liên hệ trực tiếp: <a href="tel:0867957568" data-cms-phone><strong>&#x1F4DE; Zalo / Điện thoại: 0867 957 568</strong></a>
               </div>
             </form>
           </div>
