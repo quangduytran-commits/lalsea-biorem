@@ -107,7 +107,7 @@
       // Google Ads Conversion Tracking — gửi form thành công
       if (typeof gtag === "function") {
         gtag("event", "conversion", {
-          send_to: "AW-10944306392/submit_lead_form",
+          send_to: "AW-10944306392/-BrECOm-4I8cENi50-Io",
         });
       }
     } catch (error) {
