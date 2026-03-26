@@ -103,6 +103,13 @@
           : config.successMessage,
         "success"
       );
+
+      // Google Ads Conversion Tracking — gửi form thành công
+      if (typeof gtag === "function") {
+        gtag("event", "conversion", {
+          send_to: "AW-XXXXXXXXXX/CONVERSION_LABEL",
+        });
+      }
     } catch (error) {
       setStatus(error.message || "Gui that bai. Vui long thu lai.", "error");
     } finally {
